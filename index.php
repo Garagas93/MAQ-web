@@ -2,9 +2,10 @@
 <html>
 <head>
 	<title>login_page</title>
-	<link rel="stylesheet" type="text/css" href="utilty/bootstrap-3.3.7/dist/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="utility/bootstrap-3.3.7/dist/css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="css/login_page.css">
-	<script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+	<script type="text/javascript" src="js/global_config.js"></script>
+	<script type="text/javascript" src="utility/jquery-3.2.1.js"></script>
 </head>
 <body onload="load_language(document.title)">
 	<div class="container ">
