@@ -1,0 +1,60 @@
+#################################################
+#       GIT & GITHUB - Integation & Summary    #
+#################################################
+
+Download and install GIT locally.
+AFTER:
+    % Impostare user name globale in GIT, può essere diverso da GITHUB
+        git config --global user.name "MY_NAME"
+
+    % Impostare email personale globale su GITHUB
+        git config --global user.email
+
+    % Set git to use the credential memory cache
+        git config --global credential.helper cache
+
+    % Set the cache to timeout after 1 hour (setting is in seconds)
+        git config --global credential.helper 'cache --timeout=3600'
+
+
+A COMMIT is a record of what files you have changed since the last time you made a commit. Essentially, you make changes to your repo (for example, adding a file or modifying one) and then tell git to put those files into a commit.
+
+COMMANDI UTILI GIT
+
+git init: inizializza un nuovo repository (Posizionarsi dentro la directory del progetto)
+git status
+
+Per ogni file prima di fare il COMMIT devo prima inserirlo nel STAGING ENVIRONMENT
+
+git add <filename>
+
+git commit -m "Your message about the commit"
+
+# Voglio aggiungere una nuova pagina da aggiungere al mio sito web allora faccio il BRANCH e poi MERGE, cosi non sporco i file inziali.
+git checkout -b <my branch name>
+git chekout <branch name> : per cambiare il branch
+git checkout -- <nomedelfile>
+
+git branch -d <my branch name>: elimina il branch creato
+
+# Faccio delle modifiche su github e voglio scaricarle in local uso.
+
+git pull origin master: fa il fetch e merge nel branch attuale
+git pull --rebase <remote name> <branch name>: seleziono i branch
+git merge <branch>: Mergiare una branch in quella attuale
+
+#Voglio elimare tutti i cambiamenti e far puntare alla versione del server, eseguo
+git fetch origin: 
+git reset --hard origin/master
+
+#Comando fondamentale per visualizzare tutte le modifiche fatte nel repository. 
+git log
+git diff <branch-1> <branch-2>
+
+#Creare una copia del repository localmente
+git clone <PATH_REPOSITORY>
+
+#Aggiunta di tag per versioning del applicazione
+
+git tag 1.0.0 <Hash_key(e.g. 1b2e1d63ff)
+
