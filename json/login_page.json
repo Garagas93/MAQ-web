@@ -1,8 +1,8 @@
 {
 	"form_login":[
-		{"login_header":"Welcome to MAQSystem"},
-		{"login_username":"Username: "},
-		{"login_password":"Password: "},
-		{"login_button":"Login"}	
+		{"login-header":"Welcome to MAQSystem"},
+		{"login-username":"Username: "},
+		{"login-password":"Password: "},
+		{"login-button":"Login"}	
 	]
 }
